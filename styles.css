@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+    line-height: 1.6;
+    color: #0c1013;
+    background-color: #f9fafb;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+a {
+    color: #1d4ed8;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+header {
+    background: #ffffff;
+    border-bottom: 1px solid #e5e7eb;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+nav {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.site-title {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-right: 20px;
+}
+.site-title a {
+    text-decoration: none;
+    color: #1f2933;
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 2.5rem;
+}
+main {
+    max-width: 900px;
+    margin: 3rem auto;
+    padding: 0 2rem;
+    flex: 1;
+    line-height: 1.75;
+}
+h1, h2, h3 {
+    line-height: 1.25;
+}
+h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+h3 {
+    font-size: 1.3rem;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+p {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+}
+article {
+    background: #ffffff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-top: 1.5rem;
+    border: 1px solid #e5e7eb;
+}
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    border-top: 1px solid #e5e7eb;
+    background: #ffffff;
+    font-size: 0.9rem;
+    color: #6b7280;
+}
