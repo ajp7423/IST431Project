@@ -44,11 +44,15 @@ nav {
 .site-title a {
     text-decoration: none;
     color: #1f2933;
+    display: flex;           
+    align-items: center;     
+    gap: 5px;               
 }
 .nav-links {
     list-style: none;
     display: flex;
     gap: 2.5rem;
+    
 }
 main {
     max-width: 900px;
@@ -87,4 +91,19 @@ footer {
     background: #ffffff;
     font-size: 0.9rem;
     color: #6b7280;
+}
+#chatgptlogo img {
+    display: block;
+    margin: 0 auto;
+}
+#chatgptlogoshort {
+    width: 25px;
+}
+#bias {
+    text-align: center;
+}
+#academic {
+    display: block;
+    margin: 0 auto;
+    width: 300px;
 }
