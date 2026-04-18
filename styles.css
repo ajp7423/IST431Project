@@ -39,7 +39,6 @@ nav {
 .site-title {
     font-size: 1.2rem;
     font-weight: 700;
-    margin-right: 20px;
 }
 .site-title a {
     text-decoration: none;
@@ -51,8 +50,7 @@ nav {
 .nav-links {
     list-style: none;
     display: flex;
-    gap: 2.5rem;
-    
+    gap: 2rem;
 }
 main {
     max-width: 900px;

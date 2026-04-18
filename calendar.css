@@ -1,0 +1,101 @@
+.page-layout {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+}
+.main-content {
+  flex: 2;
+}
+.calendar-container {
+  flex: 1;
+  max-width: 300px;
+}
+.calendar {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 4px;
+}
+.day {
+  border: 1px solid #ccc;
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  font-size: 10px;
+}
+.date {
+  padding: 2px;
+  font-size: 10px;
+}
+.calendar-container {
+  position: absolute;
+  right: 40px;
+  top: 169px;
+  width: 250px;
+  background: #ffffff;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+}
+@media (max-width: 1200px) {
+  .calendar-container {
+      display: none;
+  }
+}
+.legend {
+  margin-bottom: 10px;
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.legend span {
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-size: 12px;
+  border: 1px solid #e5e7eb;
+  font-weight: 500;
+}
+.legend .coding {
+  background-color: #90ee90;
+}
+.legend .school {
+  background-color: #87cefa;
+}
+.legend .jobs {
+  background-color: #fff59d;
+}
+.day.coding { 
+  background-color: #90ee90; 
+}
+.day.school { 
+  background-color: #87cefa; 
+}
+.day.jobs { 
+  background-color: #fff59d; 
+}
+.day.coding.school {
+  background: linear-gradient(to bottom, #90ee90 50%, #87cefa 50%);
+}
+.day.coding.jobs {
+  background: linear-gradient(to bottom, #90ee90 50%, #fff59d 50%);
+}
+.day.school.jobs {
+  background: linear-gradient(to bottom, #87cefa 50%, #fff59d 50%);
+}
+.day.coding.school.jobs {
+  background: linear-gradient(
+    to bottom,
+    #90ee90 33%,
+    #87cefa 33% 66%,
+    #fff59d 66%
+  );
+}
+.calendar-header {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  margin-bottom: 4px;
+  font-size: 10px;
+  text-align: center;
+  color: #6b7280;
+  padding-bottom: 4px;
+  font-weight: 500;
+}
