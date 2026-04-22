@@ -99,3 +99,6 @@
   padding-bottom: 4px;
   font-weight: 500;
 }
+.calendar-blurb p {
+  font-size: 12px;
+}
